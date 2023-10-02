@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgb(183, 193, 215);
+    background-color: rgb(183, 195, 215);
 }
 
 .nav {
@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(209, 165, 137);
+    background-color: rgb(138, 140, 76);
 }
 
 .nav li {
@@ -30,9 +30,6 @@ body {
 }
 
 .nav li a:hover {
-    background-color: rgb(162, 132, 118);
+    background-color: rgb(209,165,137);
 }
 
-.active-navpage{
-    background-color: rgb(164, 205, 255);
-}
