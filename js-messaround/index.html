@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS demo</title>
+</head>
+<body>
+    <h1>lets learn javascript!</h1>
+    <h2>how do we do onclickevents and alerts on an anchor?</h2>
+    <a href="https://eastsideprep.org" target="_blank" onclick="alert('warning you are navigating away from my site')">Eastside prep</a>
+
+    <h2>What's my secret identity?</h2>
+    <p id="secret"></p>
+    
+    <button onclick="document.getElementById('secret').innerHTML='BOO!'; document.getElementById('secret').display='block'">Reveal!</button>
+    <button onclick="document.getElementById('secret').style.display='none'">Hide!</button>
+
+
+    <h2>Of these three statements, which one is the lie?</h2>
+
+    <p>1. I have gone to Washington DC</p>
+    <p>2. I have gone to Ohio</p>
+    <p>3. I have gone to Nevada</p>
+
+    <p id="lie"></p>
+    
+    <button onclick="document.getElementById('lie').innerHTML='The third statement is the lie!'">Reveal!</button>
+
+
+
+
+    <!--add two truths and a lie-->
+
+    <h2>How do we change an image with JS?</h2>
+    <img id="bulb" src="images/pic_bulboff.gif" alt="bulb that is off">
+    <button onclick="document.getElementById('bulb').src='images/pic_bulbon.gif'">Turn on light</button>
+    <button onclick="document.getElementById('bulb').src='images/pic_bulboff.gif'">Turn off light</button>
+
+
+    <h2>how do we change css styles with a button</h2>
+    <p id="alice">Hi. I am Alice.</p>
+
+    <button 
+        onclick="document.getElementById('alice').style.color='blue';
+        document.getElementById('alice').style.fontSize='5px';">Cake: Eat me</button>
+
+    <button 
+        onclick="document.getElementById('alice').style.color='red';
+        document.getElementById('alice').style.fontSize='40px';">Potion: Drink me</button>
+
+    <button 
+        onclick="document.getElementById('alice').style.color='black';
+        document.getElementById('alice').style.fontSize='16px';">Normal</button>
+
+    <h2>how do we return user input?</h2>
+    <button onclick="askName()">What's your name?</button>
+    <p id="ask-name"></p>
+
+    <h2>Here is how we make a box around something</h2>
+    <p style="text-align: center;" id="box">BOX ME</p>
+    <button
+        onclick="document.getElementById('box').style.border='thick solid black';">click to box it</button>
+
+    <h2>Here is how we rotate something</h2>
+    <p style="text-align: center;" id="rotate">ROTATE ME</p>
+    <button
+        onclick="document.getElementById('rotate').style.transform = 'rotate(25deg)';">click to rotate</button>
+
+
+
+    <script>
+        function askName(){
+            let nameParagraph = document.getElementById('ask-name');
+            let name = prompt('What is your name?');
+            // decide what to do 
+            if (name === "batman"){
+                nameParagraph.innerHTML = "Welcome to the batcave, sir."
+            } else {
+                nameParagraph.innerHTML = "Hello " + name;
+            }
+        }
+    </script>
+
+</body>
+</html>
