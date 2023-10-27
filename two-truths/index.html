@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo - 2 truths and a lie</title>
+</head>
+<body>
+    <h1>Welcome to my 2 truths and a lie game</h1>
+    <hr>
+    <h2>Introductions</h2>
+    <form action="" id="name-form">
+        <label for="fname">First Name:</label><br>
+        <input type="text" name="fname" id="fname"><br>
+        <br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" name="lname" id="lname"><br>
+        <br>
+        <label for="age">Age:</label><br>
+        <input type="text" name="age" id="age"><br>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="greet()">
+    <p id="greet" style="font-size: x-large;">Welcome!</p>
+
+    <hr>
+
+    <h2>Warm up trivia question</h2>
+    <p>There are two names of medical drugs and one pokemon. Which one is the pokemon?</p>
+    <form action="">
+        <input type="radio" name="trivia" id="banzel">
+        <label for="banzel">Banzel</label><br>
+        <input type="radio" name="trivia" id="milotic">
+        <label for="milotic">Milotic</label><br>
+        <input type="radio" name="trivia" id="xigris">
+        <label for="xigris">Xigris</label>
+    </form> 
+    <br>
+    <input type="button" value="SUBMIT" onclick="trivia()">
+    <p id="trivia-answer"></p>
+
+    <hr>
+
+    <h2>Two Truths and a Lie</h2>
+    <p>Here are three statements. Which one is the lie?</p>
+    <form action="">
+        <input type="radio" name="truthsandalie" id="bone">
+        <label for="bone">I've never broken a bone.</label><br>
+        <input type="radio" name="truthsandalie" id="bee">
+        <label for="bee">I've never been stung by a bee.</label><br>
+        <input type="radio" name="truthsandalie" id="license">
+        <label for="license">I've haven't gotten my drivers license yet.</label>
+    </form> 
+    <br>
+    <input type="button" value="SUBMIT" onclick="truthsandalie()">
+    <p id="truthsandalie-answer"></p>
+
+
+
+    <!--add link to js file-->
+    <script src="js/game.js"></script>
+</body>
+</html>
