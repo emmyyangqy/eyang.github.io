@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/wnd1ygn.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--my external css file that overrides bootstrap-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Center the logo */
+        .navbar-brand {
+            margin: 0 auto;
+            display: table;
+        }
+
+        /* Add a red border around the images */
+        .img-thumbnail {
+            border: 5px solid #816869;
+        }
+
+        .chunk-border {
+            border: 5px solid #fad5ad;
+            padding: 20px;
+        }
+
+        .square-button {
+            display: inline-block;
+            padding: 90px 40px; /* Adjust padding to control button size */
+            background-color: #fad5ad; /* Button background color */
+            color: #44384A; /* Text color */
+            text-decoration: none; /* Remove underlines from links */
+            border: none;
+            text-align: center;
+            font-size: 40px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        .category-square-button {
+            display: inline-block;
+            padding: 15px 140px; /* Adjust padding to control button size */
+            background-color: #fad5ad; /* Button background color */
+            color: #44384A; /* Text color */
+            text-decoration: none; /* Remove underlines from links */
+            border: none;
+            text-align: center;
+            font-size: 30px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .square-button:hover {
+            background-color: #816869; /* Change the background color on hover */
+        }
+
+        p {
+            font-family: "etna", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #fad5ad;
+            font-size: 20px;
+        }
+
+    </style>
+
+</head>
+<body style="background-color: #44384A;" class="text-white">
+    <div class="container-fluid">
+
+
+        <nav style="background-color: #E25F70;" class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <!-- left-aligned -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">1</a>
+                    </li>
+
+                    </li>
+                </ul>
+                <!-- logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.avif" alt="Logo" style="width: 300px;">
+                </a>
+                <!-- right-aligned -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- bootstrap carousel -->
+        <!-- data-bs-ride this sets the carousel to auto scroll -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- carousel slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- d-block sets display to block, and w-100 sets width to 100% -->
+                    <img src="images/conjure1.jpeg" alt="Conjure Collection" class="d-block w-100">
+   
+                </div>
+                <div class="carousel-item">
+                    <!-- d-block sets display to block, and w-100 sets width to 100% -->
+                    <img src="images/friday13.jpg" alt="Friday the 13th" class="d-block w-100">
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="chunk-border">
+            <div class="row mt-4">
+                <div class="col-md-8">
+                    <h2>SHOP BY CATEGORY</h2>
+                </div>
+                <div class="col-md-4">
+                    <a class="category-square-button" href="https://redmothjewelry.com/collections">See Catalog</a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <a href="https://redmothjewelry.com/collections/pendants">
+                        <img src="images/necklaces.jpeg" alt="necklaces" class="img-thumbnail">
+                    </a>
+                    <p>Necklaces</p>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://redmothjewelry.com/collections/rings">
+                        <img src="images/ring.webp" alt="rings" class="img-thumbnail">
+                    </a>
+                    <p>Rings</p>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://redmothjewelry.com/collections/earrings">
+                        <img src="images/earring.jpeg" alt="earrings" class="img-thumbnail">
+                    </a>
+                    <p>Earrings</p>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://redmothjewelry.com/collections/wrist-cuffs">
+                        <img src="images/bracelets.webp" alt="bracelets" class="img-thumbnail">
+                    </a>
+                    <p>Bracelets</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="chunk-border">
+            <div class="row mt-2">
+
+                <div class="col-md-4" style="padding-left: 7%;">
+                    <h2>CLEARANCE</h2>
+                    <a class="square-button" href="https://redmothjewelry.com/collections/clearance">SHOP NOW</a>
+                </div>
+                <div class="col-md-8">
+                    <a href="https://redmothjewelry.com/collections/clearance">
+                        <img src="images/clearance.jpg" alt="Product 4" class="img-thumbnail float-right">
+                    </a>
+                </div>
+            </div> 
+
+
+
+        </div>
+            
+
+
+
+
+
+
+    </div>
+</body>
+</html>
