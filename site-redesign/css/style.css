@@ -13,3 +13,33 @@ caption {
     color: #fad5ad;
     font-size: 20px;
 }
+
+.centered {
+    text-align: center;
+
+}
+
+h3,h4 {
+    font-family: "etna", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fad5ad;
+}
+
+
+p,a {
+    font-family: "etna", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #fad5ad;
+    font-size: 20px;
+    
+}
+
+.red{
+    color: #E25F70;
+}
+
+.italic{
+    font-style: italic;
+}

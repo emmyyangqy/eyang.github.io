@@ -24,7 +24,7 @@
             display: table;
         }
 
-        /* Add a red border around the images */
+        /* Add a brown border around the images */
         .img-thumbnail {
             border: 5px solid #816869;
         }
@@ -37,7 +37,7 @@
         .square-button {
             display: inline-block;
             padding: 90px 40px; /* Adjust padding to control button size */
-            background-color: #fad5ad; /* Button background color */
+            background-color: #E25F70; /* Button background color */
             color: #44384A; /* Text color */
             text-decoration: none; /* Remove underlines from links */
             border: none;
@@ -59,16 +59,33 @@
             transition: background-color 0.2s ease;
         }
 
+        .submit-button {
+            display: inline-block;
+            padding: 7px 20px; /* Adjust padding to control button size */
+            background-color: #fad5ad; /* Button background color */
+            color: #44384A; /* Text color */
+            text-decoration: none; /* Remove underlines from links */
+            border: none;
+            text-align: center;
+            font-size: 25px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .enter-email {
+            display: inline-block;
+            color: #fad5ad; /* Text color */
+            text-decoration: none; /* Remove underlines from links */
+            border: none;
+            font-size: 25px;
+        }
+
         .square-button:hover {
             background-color: #816869; /* Change the background color on hover */
         }
 
-        p {
-            font-family: "etna", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            color: #fad5ad;
-            font-size: 20px;
+        .category-square-button:hover {
+            background-color: #816869; /* Change the background color on hover */
         }
 
     </style>
@@ -89,15 +106,16 @@
                     </li>
                 </ul>
                 <!-- logo -->
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo.avif" alt="Logo" style="width: 300px;">
+                <a style="padding-left: 13%" class="navbar-brand centered" href="index.html">
+                    <img src="images/logo.png" alt="">
+                    <img src="images/textlogo.png" alt="Logo" style="width: 300px;">
                 </a>
                 <!-- right-aligned -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="policy-FAQ.html">Policy/FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
                 </ul>
             </div>
         </nav>
@@ -168,7 +186,7 @@
             <div class="row mt-2">
 
                 <div class="col-md-4" style="padding-left: 7%;">
-                    <h2>CLEARANCE</h2>
+                    <h2 class="red">CLEARANCE</h2>
                     <a class="square-button" href="https://redmothjewelry.com/collections/clearance">SHOP NOW</a>
                 </div>
                 <div class="col-md-8">
@@ -181,6 +199,21 @@
 
 
         </div>
+
+        <div class="chunk-border">
+            <br>
+            <h2 style="text-align: center;">Subscribe to the RMJ Newsletter</h2>
+            <p style="text-align: center;">Stay connected without relying on social media! Receive updates, reminders, and exclusive deals by subscribing below.</p>
+            <div style="text-align: center;">
+                <form class="enter-email" action="" id="email-form">
+                    <input type="text" name="email" id="email"><br>
+                </form>
+                <input class="submit-button" type="button" value="SUBMIT" onclick="thank()">
+            </div>
+            <p style="text-align: center;" id="thank" style="font-size: x-large;"></p>
+
+            
+        </div>
             
 
 
@@ -189,5 +222,7 @@
 
 
     </div>
+
+    <script src="js/site.js"></script>
 </body>
 </html>
